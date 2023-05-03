@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    tools:context=".Last7DaysFragment">
+
+    <TextView
+        android:id="@+id/title_tvSales3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="36dp"
+        android:text="Sales"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/title_tvOrders3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Orders"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_tvSales3" />
+
+
+    <TextView
+        android:id="@+id/content_tvTotal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/title_tvOrders3"
+        app:layout_constraintTop_toBottomOf="@+id/title_tvOrders3" />
+
+    <TextView
+        android:id="@+id/content_tvTotalNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvTotal3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvTotal3" />
+
+
+    <TextView
+        android:id="@+id/content_tvSucessful3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sucessful"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvTotalNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvTotalNumber3" />
+
+
+    <TextView
+        android:id="@+id/content_tvSucessfulNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvSucessful3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvSucessful3" />
+
+    <TextView
+        android:id="@+id/content_tvCancelled3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelled"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/content_tvSucessful3"
+        app:layout_constraintTop_toTopOf="@+id/content_tvSucessful3" />
+
+    <TextView
+        android:id="@+id/content_tvCancelledNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvCancelled3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvCancelled3" />
+
+
+    <TextView
+        android:id="@+id/title_tvRevenue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revenue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/content_tvSucessful3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvSucessfulNumber3" />
+
+    <TextView
+        android:id="@+id/content_tvRevenueTotal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/title_tvRevenue3"
+        app:layout_constraintTop_toBottomOf="@+id/title_tvRevenue3" />
+
+    <TextView
+        android:id="@+id/content_tvRevenueNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvRevenueTotal3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvRevenueTotal3" />
+
+
+    <TextView
+        android:id="@+id/title_tvBasketSize3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basket Size"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/title_tvRevenue3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvRevenueNumber3" />
+
+
+    <TextView
+        android:id="@+id/content_tvAverageBasketSize3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avg. Basket size"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/title_tvBasketSize3"
+        app:layout_constraintTop_toBottomOf="@+id/title_tvBasketSize3"/>
+
+    <TextView
+        android:id="@+id/content_tvAverageBasketSizeNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/content_tvAverageBasketSize3"
+        app:layout_constraintTop_toBottomOf="@+id/content_tvAverageBasketSize3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
